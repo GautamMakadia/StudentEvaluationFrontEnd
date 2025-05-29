@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+.input-group {
+    @apply flex flex-col;
+}
+
+.label {
+    @apply text-lg font-medium ;
+}
+
+input,
+select, textarea, option {
+    @apply p-2 ;
+}
+
+.input {
+    @apply block w-full p-2;     
+}
+
+.select {
+    @apply w-full ;
+}

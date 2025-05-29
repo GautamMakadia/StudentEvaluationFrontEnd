@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@import '../../../colors.css';
+
+#root {
+    @apply flex flex-col items-center p-10;
+}
+
+#task_form {    
+    @apply flex flex-col gap-3 box-content;
+}
+ 
+#submit_container {
+    @apply flex flex-row justify-end;
+}
+
+#create_button {
+    @apply text-2xl p-2 rounded-xl font-semibold drop-shadow-sm;
+    @apply bg-primary-container text-on-primary-container;
+    @apply hover:bg-primary-fixed-dim hover:cursor-pointer outline outline-outline-variant;
+}
+
+#form-reset {
+    @apply mb-3 text-2xl;
+}
+
+#input_container {
+    @apply grid grid-cols-2 gap-3;
+}
+
+.flex_container {
+    @apply flex flex-col box-border p-5 rounded-xl outline drop-shadow-lg h-[91vh];
+    @apply outline-outline-variant bg-background;
+}
+
+.input_group {
+    @apply flex flex-col;
+}
+
+.input_label {
+    @apply text-lg text-secondary;
+}
+
+.content_inputs {
+    @apply flex flex-col;
+}
+
+.quiz_inputs {
+    @apply flex flex-col
+}
+
+.practical_inputs {
+    @apply flex flex-col;
+}
+
+.input {
+    @apply mb-4 w-auto p-2;
+    @apply rounded-lg inset-shadow-sm outline-1;
+    @apply text-on-surface-variant;
+    @apply  bg-surface-container outline-outline-variant;
+}
+
+.practical_inputs {
+    @apply flex flex-col;
+}
+
+.checkbox_container {
+    @apply flex flex-row justify-between mb-5;
+}
+
+.checkbox {
+    @apply bg-amber-50;
+}
+
+#add_ct_button {
+    @apply mb-4 py-1 px-3 rounded-lg font-semibold drop-shadow-sm;
+    @apply bg-primary-container text-on-primary-container;
+    @apply hover:bg-primary-fixed-dim hover:cursor-pointer outline outline-outline-variant;
+}
+
+.criterion_container {
+    @apply grow overflow-y-scroll p-3 rounded-xl inset-shadow-sm;
+    @apply bg-surface-container outline outline-outline-variant;
+}
+
+.criterion_item {
+    @apply p-3 not-last:mb-3 border rounded-xl relative shadow-lg;
+}

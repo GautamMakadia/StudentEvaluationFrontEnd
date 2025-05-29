@@ -1,0 +1,31 @@
+@import 'tailwindcss';
+@import "../../colors.css";
+
+
+#root {
+    @apply flex flex-col items-center grow p-2;
+}   
+
+.container {
+    @apply w-max p-3 bg-surface rounded-md outline outline-outline-variant;
+}
+
+.display {
+    @apply bg-surface-container outline outline-outline-variant rounded-lg p-2 mb-2;
+}
+
+.label {
+    @apply text-primary font-semibold;
+}
+
+.value {
+    @apply text-secondary;
+}
+
+.title {
+    @apply text-primary font-semibold;
+}
+
+.display_list {
+    @apply flex flex-col;
+}

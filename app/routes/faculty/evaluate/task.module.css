@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import "../../../colors.css";
+
+/* Container for the full task details page */
+.taskContainer {
+  @apply flex flex-col items-center bg-gray-50 space-y-4 min-h-full h-auto;
+}
+
+/* Header section for task metadata */
+.taskDetails {
+  @apply p-5;
+}
+
+/* Task title */
+.taskTitle {
+  @apply text-lg font-bold;
+}
+
+/* Students list container */
+.studentList {
+  @apply flex flex-col;
+}
+
+/* Section heading */
+.sectionTitle {
+  @apply font-semibold text-lg mt-4;
+}
+
+/* Card for each student */
+.studentCard {
+  @apply bg-white p-3 border rounded shadow-sm mt-5;
+}
+
+/* Top row in student card */
+.studentHeader {
+  @apply flex justify-between w-2xl items-center cursor-pointer;
+}
+
+
+.container {
+  @apply p-4;
+}
+
+.studentList {
+  @apply space-y-4 mt-4;
+}
+
+.studentCard {
+  @apply bg-white border rounded-lg shadow-sm p-4;
+}
+
+.headerRow {
+  @apply flex flex-wrap justify-between items-center cursor-pointer;
+}
+
+.studentName {
+  @apply text-gray-800 font-medium;
+}
+
+.studentMarks,
+.submittedAt {
+  @apply text-sm text-gray-600;
+}
+
+.statusPass {
+  @apply text-sm font-semibold text-green-600;
+}
+
+.statusFail {
+  @apply text-sm font-semibold text-red-600;
+}
+
+.toggleArrow {
+  @apply text-gray-500 text-sm;
+}
+
+.feedbackRow {
+  @apply my-3;
+}
+.evalHeader {
+  @apply block font-semibold text-gray-700;
+}
+
+.criteriaBox {
+  @apply flex flex-col gap-1 bg-gray-50 p-3 rounded-md border mb-3;
+}
+
+.criteriaLabel {
+  @apply text-gray-800 font-medium;
+}
+
+.criteriaStudentScore {
+  @apply text-sm text-green-700;
+}
+
+.inputNumber {
+  @apply border px-2 py-1 rounded w-28 focus:outline-none focus:ring focus:border-blue-500;
+}
+
+.textArea {
+  @apply w-full p-3 border rounded-md focus:outline-none focus:ring focus:border-blue-400 text-sm;
+}
+
+.buttonRow {
+  @apply flex justify-end gap-2;
+}
+
+.cancelBtn {
+  @apply px-4 py-2 border rounded-md text-sm text-gray-700 hover:bg-gray-100;
+}
+
+.submitBtn {
+  @apply px-4 py-2 bg-blue-600 text-white rounded-md text-sm hover:bg-blue-700;
+}

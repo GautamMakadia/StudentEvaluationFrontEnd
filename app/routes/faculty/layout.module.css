@@ -1,0 +1,42 @@
+@import 'tailwindcss';
+@import "../../colors.css";
+
+#root {
+    @apply flex flex-col h-full;
+} 
+
+#nav {
+    @apply flex flex-row items-center space-x-4 drop-shadow-lg;
+    @apply bg-surface;
+}
+
+#head {
+    @apply text-xl font-bold text-primary;
+}
+
+#navlist {
+    @apply flex flex-row grow gap-2;
+}
+
+.nav_item {
+    @apply p-3;
+}
+
+.nav_link {
+    @apply text-sm font-semibold;
+    @apply text-on-surface-variant;
+    @apply hover:text-primary hover:cursor-pointer;
+}
+
+.nav_link_active {
+    @apply text-primary;
+}
+
+#nav_user {
+    @apply hover:cursor-pointer ;
+}
+
+#main {
+    @apply flex flex-col h-[93dvh] overflow-y-scroll;
+    @apply bg-background;
+}
