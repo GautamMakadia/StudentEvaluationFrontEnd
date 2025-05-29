@@ -70,6 +70,7 @@ export type TaskContent = Quiz | Presentation | Practical | Assignment;
 export type SubmissionContent = SubQuiz | SubPractical;
 // --- Submission Model ---
 export interface Submission {
+  task_id: string; // ID of the task this submission belongs to
   student_id: string;
   student_name: string;
   roll_no: string;
@@ -137,16 +138,15 @@ export interface SemesterTask {
 }
 
 export interface SemesterData {
-  semester: number;
   subjects: SubjectModel[];
-  tasks: SemesterTask[];
+  submission: Submission[];
 }
 
 export interface Student {
   _id?: string;
   user_id: string;
-  email: string;
   name: string;
+  roll_no: string;
   department: DepartmentModel;
   current_semester: number;
   semesters: SemesterData[];
